@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal Radix Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+
+    <h1>Universal Radix Studio</h1>
+    <p>Offline Base Converter (2–62)</p>
+
+    <div class="row">
+      <div>
+        <label>From Base</label>
+        <select id="fromBase"></select>
+      </div>
+      <div>
+        <label>To Base</label>
+        <select id="toBase"></select>
+      </div>
+    </div>
+
+    <button id="swap">⇅ Swap Bases</button>
+
+    <label>Input Number</label>
+    <textarea id="input" rows="3" placeholder="Example : 00az"></textarea>
+
+    <button id="convert">Convert</button>
+
+    <div class="outputBox">
+      <div class="top">
+        <span>OUTPUT</span>
+        <button id="copy">Copy</button>
+      </div>
+      <div id="result">—</div>
+    </div>
+
+    <div id="status">Ready</div>
+
+    <div class="info">
+      <h3>Digit Map</h3>
+      <div class="grid">
+        <div>0–9 → 0–9</div>
+        <div>A–Z → 10–35</div>
+        <div>a–z → 36–61</div>
+      </div>
+    </div>
+
+    <div class="history">
+      <h3>Recent</h3>
+      <div id="history"></div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
